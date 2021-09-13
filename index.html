@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" type="text/css" href="./Style.css">
+    <title>Nintendo Store</title>
+</head>
+
+<body>
+    <div id="Conteiner-Principal">
+        <div class="Nav-bar">
+            <img class="Logomarca" src="./img/Nintendo Swith Logo.png" alt="Logo">
+            <nav>
+                <ul id="Menu-List">
+                    <li class="nav-itens" class="nav-link">Consoles </li>
+                    <li class="nav-itens" class="nav-link">Acessórios</li>
+                    <li class="nav-itens" class="nav-link">Controles</li>
+                    <li class="nav-itens" class="nav-link">Outros</li>
+                </ul>
+            </nav>
+            <img class="Menu-icone" src="./img/menu.png" alt="Botao-Menu" onclick="showMenu()">
+        </div>
+
+        <div id="Fileiras">
+            <div class="Primeira-Fileira">
+                <h1>Nintendo Swith</h1>
+                <h3>Wireless Hybrid Console</h3>
+                <p>Original Console </p>
+                <h4>R$ 1.230</h4>
+                <button class="Comprar">Comprar Agora <img src="./img/arrow.png" alt="flecha"></button>
+            </div>
+
+            <div class="Segunda-Fileira">
+                <img class="console" src="./img/Nintendo Swith.png" alt="Console">
+                <div class="Box-Vazia"></div>
+                <button class="Add"><img src="./img/add.png" alt="Adicionar-Coisa"></button>
+            </div>
+        </div>
+
+        <div id="Social-Links">
+            <img src="./img/ig.png" alt="Instagram">
+            <img src="./img/fb.png" alt="Facebook">
+            <img src="./img/tw.png" alt="Twitter">
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    const Menulist = document.getElementById("Menu-List")
+    Menulist.style.maxHeight = "0px"
+
+    function showMenu() {
+        if (Menulist.style.maxHeight === "0px") {
+            Menulist.style.maxHeight = "130px"
+        }
+        else {
+            Menulist.style.maxHeight = "0px"
+        }
+    }
+
+</script>
+
+</html>
