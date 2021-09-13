@@ -1,3 +1,3 @@
 # Nintendo-Store
  Um pequeno site de uma vendo do Nintendo Swith
-nintendo-store.netlify.app
+Link do site: nintendo-store.netlify.app
